@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1150.0" style="-fx-background-color: #17202A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.SecondpageController">
+   <children>
+      <TitledPane animated="false" layoutX="73.0" layoutY="-44.0" text="untitled" />
+      <HBox layoutX="1.0" layoutY="22.0" prefHeight="89.0" prefWidth="1150.0" style="-fx-border-color: #FFFDD0; -fx-border-image-width: 300;" AnchorPane.leftAnchor="1.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Button fx:id="handwritten" mnemonicParsing="false" onAction="#Handwrittenpaneshow" prefHeight="57.0" prefWidth="396.0" style="-fx-background-color: #FFDFD3;" text="Handwritten Notes">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="history" mnemonicParsing="false" onAction="#Historypaneshow" prefHeight="57.0" prefWidth="358.0" style="-fx-background-color: #FFFDD0;" text="History">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buyer" mnemonicParsing="false" onAction="#BuyerpaneShow" prefHeight="57.0" prefWidth="375.0" style="-fx-background-color: #FFDFD3;" text="BUYER">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="seller" mnemonicParsing="false" onAction="#Sellerpaneshow" prefHeight="57.0" prefWidth="364.0" style="-fx-background-color: #FFFDD0;" text="SELLER">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="pane_seller" layoutX="1.0" layoutY="187.0" prefHeight="663.0" prefWidth="1150.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="187.0">
+         <children>
+            <Label layoutX="380.0" layoutY="40.0" prefHeight="55.0" prefWidth="357.0" text="Please Enter the Details" textFill="#f5b0b0">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="176.0" layoutY="151.0" prefHeight="32.0" prefWidth="193.0" text="Book Name" textFill="#f2f0f0">
+               <font>
+                  <Font name="Times New Roman Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="176.0" layoutY="197.0" prefHeight="55.0" prefWidth="178.0" text="Author Name" textFill="#f8f1f1">
+               <font>
+                  <Font name="Times New Roman Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="252.0" prefHeight="55.0" prefWidth="187.0" text="Semester" textFill="#f2eded">
+               <font>
+                  <Font name="Times New Roman Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="319.0" prefHeight="21.0" prefWidth="145.0" text="Price" textFill="#eeecec">
+               <font>
+                  <Font name="Times New Roman Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="373.0" text="Student Id" textFill="#f8f8f8">
+               <font>
+                  <Font name="Times New Roman Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="431.0" text="Book Id" textFill="#fcf9f9">
+               <font>
+                  <Font name="Times New Roman Bold" size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bookname" layoutX="429.0" layoutY="152.0" prefHeight="31.0" prefWidth="391.0" />
+            <TextField fx:id="authorname" layoutX="429.0" layoutY="209.0" prefHeight="31.0" prefWidth="391.0" />
+            <TextField fx:id="semester" layoutX="429.0" layoutY="264.0" prefHeight="31.0" prefWidth="391.0" />
+            <TextField fx:id="price" layoutX="429.0" layoutY="320.0" prefHeight="31.0" prefWidth="391.0" />
+            <TextField fx:id="studentid" layoutX="429.0" layoutY="375.0" prefHeight="31.0" prefWidth="391.0" />
+            <TextField fx:id="bookid" layoutX="429.0" layoutY="432.0" prefHeight="31.0" prefWidth="391.0" />
+            <Button fx:id="button" layoutX="639.0" layoutY="539.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="382.0" style="-fx-background-color: #FFFDD0; -fx-background-radius: 90;" text="Submit">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="34.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_buyer" layoutX="168.0" layoutY="306.0" prefHeight="688.0" prefWidth="1150.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="124.0" layoutY="51.0" prefHeight="55.0" prefWidth="318.0" text="Enter College Id" textFill="#eeeeee">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="collegeid_buy" layoutX="442.0" layoutY="63.0" prefHeight="31.0" prefWidth="223.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_history" layoutX="201.0" layoutY="306.0" prefHeight="688.0" prefWidth="1150.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <AnchorPane fx:id="pane_handwritten" layoutX="59.0" layoutY="225.0" prefHeight="688.0" prefWidth="1150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <AnchorPane fx:id="pane_handwritten1" layoutX="10.0" layoutY="172.0" prefHeight="688.0" prefWidth="1150.0" />
+   </children>
+</AnchorPane>
